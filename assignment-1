@@ -1,0 +1,433 @@
+
+Section A: Short Answer Questions
+Q1. What is JavaScript?
+Answer:
+JavaScript is a high-level, dynamically typed programming language used to create interactive websites and applications. It can run in web browsers and also on servers using Node.js. 
+
+
+Q2. Who created JavaScript and in which year?
+Answer:
+JavaScript was created by Brendan Eich in 1995 at Netscape. 
+
+
+Q3. What was the original name of JavaScript?
+Answer:
+The original name of JavaScript was Mocha. It was later renamed LiveScript and finally JavaScript. 
+
+
+Q4. Is JavaScript the same as Java? Give one major difference.
+Answer:
+No, JavaScript and Java are different programming languages.
+
+JavaScript is dynamically typed.
+
+Java is statically typed.
+
+They also have different uses and were created by different people. 
+
+
+Q5. What does it mean when we say JavaScript is a high-level programming language?
+Answer:
+A high-level language uses simple, human-readable instructions and hides complex computer hardware and memory management from the programmer. 
+
+
+Q6. Is JavaScript a compiled language or an interpreted language? Explain briefly.
+Answer:
+For beginner-level understanding, JavaScript is considered an interpreted language because its code is executed by a JavaScript engine while the program runs. The engine reads and executes the code. 
+
+
+Q7. Name the JavaScript engines used by the following browsers.
+Browser	JavaScript Engine
+Google Chrome	V8
+Mozilla Firefox	SpiderMonkey
+Apple Safari	JavaScriptCore
+
+
+Q8. What is Dynamic Typing in JavaScript?
+Answer:
+Dynamic typing means that we do not need to declare the data type of a variable. JavaScript determines the type while the program is running, and the type can change when a new value is assigned. 
+
+
+Example:
+
+let value = 10;        // number
+value = "Hello";       // string
+Q9. What is the main difference between a static website and a dynamic website?
+Answer:
+
+Static website: Mainly displays fixed content that does not change after the page loads.
+
+Dynamic website: Can respond to user actions and change content, images, messages, or data using JavaScript. 
+
+
+Q10. Name the three pillars of Front-end Web Development and write one line about each.
+Answer:
+
+HTML – Provides the structure and content of a webpage.
+
+CSS – Provides the style and design of a webpage.
+
+JavaScript – Provides behavior, actions, and interaction. 
+
+
+Easy memory trick:
+HTML = Structure | CSS = Style | JavaScript = Behavior
+
+Q11. What is the difference between Frontend and Backend?
+Answer:
+
+Frontend: The part of a website that users see and interact with. It runs mainly in the user's browser.
+
+Backend: The part that works behind the scenes and handles business logic, data processing, storage, security, and APIs. 
+
+
+Q12. What is Node.js?
+Answer:
+Node.js is a runtime environment for JavaScript that allows JavaScript to run outside the browser. It can be used to create servers and backend applications. 
+
+
+Q13. Explain ECMAScript. What is its relation with JavaScript?
+Answer:
+ECMAScript is a standard or rulebook that defines how JavaScript should work. JavaScript is a programming language that follows the ECMAScript standard. 
+
+
+Simple example:
+ECMAScript = rules/standard
+JavaScript = language that follows those rules.
+
+Section B: True or False
+1. JavaScript is a statically typed language.
+Answer: False ❌
+
+Correction: JavaScript is a dynamically typed language.
+
+2. JavaScript can only run inside the browser.
+Answer: False ❌
+
+Correction: JavaScript can run in browsers and outside browsers using Node.js. 
+
+
+3. HTML is responsible for the behaviour of a webpage.
+Answer: False ❌
+
+Correction: HTML provides the structure, while JavaScript provides behavior and interaction.
+
+4. Node.js allows JavaScript to run outside the browser.
+Answer: True ✅
+
+5. JavaScript is case-insensitive.
+Answer: False ❌
+
+Correction: JavaScript is case-sensitive. 
+
+
+6. let name and let Name are the same variable.
+Answer: False ❌
+
+Correction: name and Name are different variables because JavaScript is case-sensitive.
+
+7. ECMAScript is a programming language.
+Answer: False ❌
+
+Correction: ECMAScript is a standard/specification that defines how JavaScript should work. 
+
+
+8. React, Angular, and Vue.js are used for Backend development.
+Answer: False ❌
+
+Correction: React, Angular, and Vue.js are mainly used for Frontend development. 
+
+
+Section C: Fill in the Blanks
+1.
+JavaScript was created by Brendan Eich in the year 1995.
+
+2.
+The three technologies used in Front-end development are HTML, CSS, and JavaScript.
+
+3.
+JavaScript engines: Chrome uses V8, Firefox uses SpiderMonkey.
+
+4.
+In the restaurant analogy:
+
+Customer = User
+
+Waiter = Server
+
+Chef = Database
+
+
+
+5.
+JavaScript file extension is .js. 
+
+
+Section D: Conceptual Questions
+Q14. Differentiate between a static website and a dynamic website. Give one real-world example of each.
+Answer:
+
+Static Website	Dynamic Website
+Content is mostly fixed.	Content can change based on interaction or data.
+Limited interaction.	Highly interactive.
+Mainly displays text, images, and links.	Can respond to clicks, forms, data, etc.
+Example of static website: A simple personal information/portfolio page.
+
+Example of dynamic website: Amazon, where users can add products to a cart, filter products, and see changing information. 
+
+
+Q15. Explain any two features of JavaScript that make it suitable for creating interactive web pages.
+Answer:
+
+1. Event-driven
+JavaScript can respond to events such as:
+
+Mouse clicks
+
+Keyboard presses
+
+Form submissions
+
+Page loading
+
+For example, clicking a button can display an alert. 
+
+
+2. Dynamic
+JavaScript can change webpage content while the page is running, such as changing text, images, colors, or displaying messages. 
+
+
+Q16. List any four areas apart from web browsers where JavaScript is used today.
+Answer:
+
+Area	Framework/Technology
+Backend	Node.js / Express.js
+Mobile apps	React Native
+Desktop apps	Electron
+Games	Phaser / Three.js
+JavaScript is therefore a multipurpose language used beyond traditional browser-based websites. 
+
+
+Q17. Difference between JavaScript inside HTML and an external .js file.
+Answer:
+
+JavaScript inside HTML
+JavaScript can be written directly inside an HTML file using the <script> tag.
+
+<script>
+    alert("Hello!");
+</script>
+External JavaScript
+JavaScript can be written in a separate .js file and connected to HTML.
+
+script.js
+
+alert("Hello!");
+HTML
+
+<script src="script.js"></script>
+Two advantages of external JavaScript:
+Code can be reused across multiple HTML pages.
+
+HTML remains cleaner and easier to maintain.
+
+The provided notes demonstrate both inline and external JavaScript. 
+
+
+Q18. Explain Frontend and Backend using the restaurant analogy.
+Answer:
+
+Imagine a website as a restaurant.
+
+Customer = User: The customer interacts with the restaurant by placing an order.
+
+Waiter = Server: The waiter takes the customer's request to the kitchen and brings back the result.
+
+Chef = Database: The chef prepares the food using available ingredients.
+
+Similarly, the Frontend is what the user interacts with, while the Backend processes requests and works behind the scenes. 
+
+
+Q19. Why should a beginner learn JavaScript? Write at least 4 points.
+Answer:
+
+A beginner should learn JavaScript because:
+
+It makes websites interactive.
+
+It can be used for both Frontend and Backend development.
+
+It can be used to create mobile and desktop applications.
+
+It has a large developer community.
+
+Beginners can quickly see the results of their code.
+
+It can run in browsers as well as on servers using Node.js. 
+
+
+Section E: Code-Based Questions
+Q20. Predict the output.
+let value = 25;
+console.log(typeof value);
+
+value = "JavaScript";
+console.log(typeof value);
+
+value = false;
+console.log(typeof value);
+Output:
+number
+string
+boolean
+Explanation:
+Initially:
+
+value = 25;
+25 is a number.
+
+Then:
+
+value = "JavaScript";
+The value becomes a string.
+
+Finally:
+
+value = false;
+The value becomes a boolean.
+
+This demonstrates dynamic typing in JavaScript. 
+
+
+Q21. Alert box when button is clicked
+Answer:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Alert</title>
+</head>
+<body>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <script>
+        function showMessage() {
+            alert("Welcome to JavaScript!");
+        }
+    </script>
+
+</body>
+</html>
+How it works:
+When the user clicks Click Me, the showMessage() function runs and displays:
+
+Welcome to JavaScript!
+Q22. Demonstrate event-driven programming
+Answer:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Driven Programming</title>
+</head>
+<body>
+
+    <button id="myBtn">Click Me</button>
+
+    <p id="demo">Original text</p>
+
+    <script>
+        document.getElementById("myBtn").addEventListener("click", function() {
+            document.getElementById("demo").textContent = "Button was clicked!";
+        });
+    </script>
+
+</body>
+</html>
+Explanation:
+The click is an event. When the button is clicked, JavaScript responds to that event and changes the paragraph text.
+
+This is called event-driven programming. 
+
+
+Section F: Practical / Application Based
+Q23. Complete HTML + JavaScript program
+Answer:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First JavaScript Page</title>
+</head>
+
+<body>
+
+    <h1>My First JavaScript Page</h1>
+
+    <button id="myButton">Click Me</button>
+
+    <script>
+        console.log("JavaScript is running successfully!");
+
+        document.getElementById("myButton").addEventListener("click", function() {
+
+            alert("Hello, B.Tech Student!");
+
+            document.body.style.backgroundColor = "lightblue";
+
+        });
+    </script>
+
+</body>
+</html>
+What happens?
+When the page loads:
+
+JavaScript is running successfully!
+appears in the browser console.
+
+When Click Me is clicked:
+
+An alert appears:
+Hello, B.Tech Student!
+
+The webpage background becomes light blue.
+
+This follows the same HTML + JavaScript interaction pattern shown in your notes. 
+
+
+Section G: Higher Order Thinking
+Q24. Why did JavaScript become so popular and multipurpose?
+Answer:
+
+JavaScript became popular because it started as a language for making webpages interactive, but its use expanded into many areas.
+
+First, JavaScript runs directly in web browsers, so it became an important technology for Frontend development. It works together with HTML and CSS to create interactive websites.
+
+Second, Node.js allowed JavaScript to run outside the browser. This made it possible to use JavaScript for Backend development, servers, and APIs. 
+
+
+Third, JavaScript can now be used in many areas such as:
+
+Frontend → React, Angular, Vue.js
+
+Backend → Node.js, Express.js
+
+Mobile apps → React Native
+
+Desktop apps → Electron
+
+Games → Phaser, Three.js
+
+Data visualization → Chart.js, D3.js
+
+Finally, ECMAScript provides the standard that defines how JavaScript should work. Regular ECMAScript updates have added new features over time. For example, ES6/ES2015 introduced let, const, arrow functions, and classes. 
+
+
+Therefore, JavaScript became popular because it is versatile, cross-platform, continuously improved, and can be used across many types of applications.
+
+
+
+a
+
