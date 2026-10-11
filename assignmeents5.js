@@ -546,6 +546,184 @@ console.log("" !== 0); //output->true
 console.log(NaN !== NaN); //output->true
 // 5
 // Write a condition that checks if a variable input is strictly not equal to the string "0". ->
+// Part C] Relational Operators
+
+// 5. Greater Than (>)
+
+// Q1
+let studentMarks = 78;
+let passingMarks = 40;
+console.log(studentMarks > passingMarks);
+
+// Q2
+let todayTemperature = 35;
+let yesterdayTemperature = 28;
+console.log(todayTemperature > yesterdayTemperature);
+
+// Q3. Predict the output
+console.log(15 > 10); // true
+console.log(10 > 15); // false
+console.log(10 > 10); // false
+
+// Q4. Predict the output
+console.log("20" > 15); // true, the string is converted to a number
+console.log("5" > "10"); // true, strings are compared lexicographically
+console.log("abc" > 10); // false, abc converts to NaN
+
+// Q5. What is the result and why?
+console.log(null > 0); // false, null converts to zero
+console.log(undefined > 0); // false, undefined converts to NaN
+
+// Q6
+let stock = 120;
+let itemsWanted = 85;
+console.log(stock > itemsWanted);
+
+// Q7. Predict and explain the outputs
+console.log(true > false); // true, true converts to 1 and false converts to 0
+console.log("10" > "2"); // false, the first character 1 comes before 2
+console.log(NaN > 5); // false, comparisons involving NaN return false
+
+
+// 6. Less Than (<)
+
+// Q1
+let boxCapacity = 50;
+let currentWeight = 42;
+console.log(currentWeight < boxCapacity);
+
+// Q2
+let age = 16;
+let minimumAge = 18;
+console.log(age < minimumAge);
+
+// Q3. Predict the output
+console.log(8 < 12); // true
+console.log(20 < 10); // false
+console.log(7 < 7); // false
+
+// Q4. Predict the output
+console.log("8" < 10); // true, the string is converted to a number
+console.log("20" < "3"); // true, strings are compared lexicographically
+console.log("hello" < 5); // false, hello converts to NaN
+
+// Q5. What is the result and why?
+console.log(null < 0); // false, null converts to zero
+console.log(undefined < 0); // false, undefined converts to NaN
+
+// Q6
+let tankCapacity = 500;
+let waterLevel = 375;
+console.log(waterLevel < tankCapacity);
+
+// Q7. Predict and explain the outputs
+console.log(false < true); // true, false converts to 0 and true converts to 1
+console.log("5" < "15"); // false, the first character 5 comes after 1
+console.log(NaN < 10); // false, comparisons involving NaN return false
+
+
+// 7. Greater Than or Equal To (>=)
+
+// Q1
+let distinctionMarks = 75;
+let scoredMarks = 75;
+console.log(scoredMarks >= distinctionMarks);
+
+// Q2
+let ticketPrice = 300;
+let availableMoney = 300;
+console.log(availableMoney >= ticketPrice);
+
+// Q3. Predict the output
+console.log(25 >= 25); // true
+console.log(30 >= 25); // true
+console.log(20 >= 25); // false
+
+// Q4. Predict the output
+console.log("25" >= 25); // true, the string is converted to a number
+console.log("10" >= "2"); // false, strings are compared lexicographically
+console.log(null >= 0); // true, null converts to zero
+
+// Q5. What is the result and why?
+console.log(undefined >= 0); // false, undefined converts to NaN
+
+// Q6
+let liftCapacity = 8;
+let peopleInside = 8;
+console.log(peopleInside >= liftCapacity);
+
+// Q7. Predict and explain the outputs
+console.log(true >= 1); // true, true converts to 1
+console.log("" >= 0); // true, an empty string converts to zero
+console.log(NaN >= NaN); // false, comparisons involving NaN return false
+
+
+// 8. Less Than or Equal To (<=)
+
+// Q1
+let speedLimit = 60;
+let vehicleSpeed = 60;
+console.log(vehicleSpeed <= speedLimit);
+
+// Q2
+let studentScore = 39;
+let passingScore = 40;
+console.log(studentScore < passingScore);
+
+// Q3. Predict the output
+console.log(15 <= 20); // true
+console.log(20 <= 15); // false
+console.log(15 <= 15); // true
+
+// Q4. Predict the output
+console.log("15" <= 20); // true, the string is converted to a number
+console.log("30" <= "5"); // true, strings are compared lexicographically
+console.log(null <= 0); // true, null converts to zero
+
+// Q5. What is the result and why?
+console.log(undefined <= 0); // false, undefined converts to NaN
+
+// Q6
+let bagCapacity = 10;
+let booksInside = 10;
+console.log(booksInside < bagCapacity);
+
+// Q7. Predict and explain the outputs
+console.log(false <= 0); // true, false converts to zero
+console.log("" <= 0); // true, an empty string converts to zero
+console.log(NaN <= 5); // false, comparisons involving NaN return false
+
+
+// Mixed Practice (>, <, >=, <=)
+
+// Q1
+let votingAge = 18;
+console.log(18 >= votingAge);
+
+let temperature = 32;
+console.log(temperature < 35);
+
+let score = 90;
+console.log(score > 85);
+
+// Q2. Predict the outputs
+console.log(10 > 5 && 5 < 10); // true, both conditions are true
+console.log("10" >= 10); // true, the string is converted to a number
+console.log(null <= undefined); // false, undefined converts to NaN
+console.log("5" < "10" && 5 > 2); // false, string comparison is false, so the whole AND expression is false
+
+// Q3
+let productPrice = 499;
+let customerMoney = 500;
+console.log(customerMoney >= productPrice);
+console.log(customerMoney < productPrice);
+
+let change = customerMoney - productPrice;
+console.log(change);
+
+// Q4. Explain why
+console.log("10" > "2"); // false, strings are compared lexicographically, and 1 comes before 2
+console.log(10 > 2); // true, numbers are compared by numerical value
 
  
 
