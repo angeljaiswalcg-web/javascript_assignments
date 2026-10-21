@@ -6,6 +6,7 @@
 
 ### 1. Addition `+`
 
+
 1. A school collected ₹15,000 from one class and ₹12,500 from another class. Find the total collection.  
 2. A person reads 18 pages in the morning and 25 pages in the evening. Find the total pages read.  
 3. A shop sold 125 items on Monday and 178 items on Tuesday. Find the total items sold.  
