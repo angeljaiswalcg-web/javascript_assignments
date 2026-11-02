@@ -123,3 +123,173 @@ console.log(declare("angel"));
 console.log(declare("angel"));
 console.log(day());
 console.log(day());
+// Section 5: Parameters vs Arguments
+// 1
+function subtract(a, b){
+    return (a-b);
+};
+console.log(subtract(50,18))
+// 2.
+const greetUser=function(name){
+    return ("Welcome, " + name + "!");
+};
+console.log(greetUser("Aarav"));
+// 3
+function calculateArea(length, breadth){
+    let area=(length*breadth);
+    return area;
+};
+console.log(caalculateArea(12,5));
+console.log(calculateArea(8,9));
+// 4
+// parameter:Variables defined inside the function definition.
+// argument:Actual values passed while calling the function.
+// 5.
+ Yes, it is allowed.
+JavaScript does not force you to pass arguments. You can call the function with none.
+
+Step 2: What happens inside the function.
+Each parameter that gets no argument becomes undefined.
+
+javascript
+function greet(name) {
+  return "Hello, " + name;
+}
+
+greet();   // "Hello, undefined"
+
+Step 3: No error is thrown.
+The function still runs. Only the value of name is undefined.
+
+Step 4: How to avoid undefined.
+Give the parameter a default value.
+
+javascript
+function greet(name = "friend") {
+  return "Hello, " + name;
+}
+
+greet();   // "Hello, friend"
+// Section 6: Return Statement
+// 1.
+function squareOfNumber(n){
+    return n*n;
+};
+console.log(squareOfNumber(9));
+// 2
+function isAdult(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return false;
+  }
+}
+// 3
+function getFullName(firstName, lastName){
+    return (firstName+" "+lastName);
+}console.log(getFullName("Rohit","Sharma"));
+// 4
+It returns undefined.
+
+Step 1: The function runs normally.
+All the code inside executes from top to bottom.
+
+Step 2: No value is sent back.
+Without return, the function has nothing to give to the caller.
+
+Step 3: JavaScript fills in undefined.
+When the function finishes, the result is automatically undefined.
+
+javascript
+function sayHello() {
+  console.log("Hello");
+}
+
+const result = sayHello();   // prints "Hello"
+console.log(result);         // undefined
+// 5
+console.log() only shows the answer on the screen. return gives the answer back so you can keep using it later.
+
+Think of it like a calculator: console.log() is just reading the number out loud, and return is handing you the number so you can use it in your next calculation.
+
+javascript
+function add(a, b) {
+  return a + b;
+}
+
+const total = add(2, 3) * 10;   // 50
+// Section 7: Why Use Functions? (Real-world Example)
+// 1
+
+function getTotal(m1, m2, m3){
+    return (m1+m2+m3);
+};
+console.log(getTotal(90,80,80))
+console.log(getTotal(70,60,80))
+console.log(getTotal(60,80,40))
+console.log(getTotal(30,80,70))
+// 2
+function calculateSimpleInterest(principal, rate, time){
+   simpleInterset=((principal*rate*time)/100)
+    return simpleInterset;
+};
+console.log(calculateSimpleInterest(3000,2,2))
+console.log(calculateSimpleInterest(6000,6,2))
+// 3
+
+let m1=40,m2=30, m3=90;
+ let average=m1+m2+m3;
+console.log(average);
+m1=90,m2=90,m3=80;
+average=m1+m2+m3;
+console.log(average);
+// as we have declare every marks and average
+// because:
+// A variable stores a value.
+// A function stores a calculation (it runs again each time you call it).
+function findAverage(a, b, c){
+    return ((a+b+c)/3);
+};
+console.log(findAverage(20,20,20))
+console.log(findAverage(30,40,50))
+// 4
+A function lets you write a piece of code once and then reuse it as many times as you need by calling its name. If the logic needs to change, you fix it in one place instead of everywhere.
+
+Real-world example: calculating the final price after discount
+
+Imagine a shopping website that shows the final price for many products.
+
+Without a function (repeated code):
+
+javascript
+let price1 = 1000;
+let final1 = price1 - (price1 * 10) / 100;
+console.log(final1);   // 900
+
+let price2 = 2500;
+let final2 = price2 - (price2 * 10) / 100;
+console.log(final2);   // 2250
+
+let price3 = 400;
+let final3 = price3 - (price3 * 10) / 100;
+console.log(final3);   // 360
+
+The same calculation is written three times. If the discount changes from 10% to 20%, you must edit every line.
+
+With a function (written once):
+
+javascript
+function finalPrice(price) {
+  return price - (price * 10) / 100;
+}
+
+console.log(finalPrice(1000));   // 900
+console.log(finalPrice(2500));   // 2250
+console.log(finalPrice(400));    // 360
+// 5.
+// Less code: write the logic once, use it many times.
+// Easy to change: update the formula in one place.
+// Fewer mistakes: no chance of typing the formula wrong in one of the copies.
+// Easier to read: finalPrice(1000) explains itself better than a long formula.
+
+
